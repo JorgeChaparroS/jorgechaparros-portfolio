@@ -1,27 +1,18 @@
-# JorgechaparrosPortfolio
+# jorgechaparros-portfolio
+This application is built in Angular 17 (latest version of the framework so far), and it gathers some of relevant projects that I have worked in. They are not related to my current or previus jobs, just, projects that I have developed or contributed in my free time. Because once you start to like coding, it is hard to stop doing it. It becomes a passion. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+Here you are going to find frontend, backend and fullstack projects. (Actually, only frontend projects are available LOL, but I promise to continue expanding my content, just give me some time)
 
-## Development server
+I hope you like it.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Installation Steps: 
+1. In your workspace, clone the repository with "git clone https://github.com/JorgeChaparroS/jorgechaparros-portfolio"
+2. Type "cd jorgechaparros-portfolio"
+3. Install dependencies with "npm i"
+4. Run the application with "npm run start" or "ng serve"
 
-## Code scaffolding
+# Website: 
+If you do not want to install and launch the project locally, you can always go and check it online here: // deployement is pending yet LOL 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Authors:
+@JorgeChaparroS on Instagram and Twitter. (You can always email me at jorgechaparrosarmiento@gmail.com as well)
