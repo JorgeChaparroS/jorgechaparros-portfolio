@@ -1,0 +1,21 @@
+@import "../styles.scss";
+
+.header-container {
+    height: 88px;
+    @media (min-width: $min-width-tablet) {
+        height: 125px;
+    }
+    @media (min-width: $min-width-desktop) {
+        height: 135px;
+    }
+}
+
+main {
+    min-height: calc(100vh - 88px - 108px);
+    @media (min-width: $min-width-tablet) {
+        min-height: calc(100vh - 125px - 64px);
+    }
+    @media (min-width: $min-width-desktop) {
+        min-height: calc(100vh - 135px - 70px);
+    }
+}
