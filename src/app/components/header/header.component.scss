@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+header {
+    background-color: $black;
+    position: fixed;
+    z-index: 1;
+    img {
+        max-width: 75px;
+        border-radius: 50%;
+        border: 3px solid $white;
+        @media (min-width: $min-width-tablet) {
+            max-width: 110px;
+        }
+        @media (min-width: $min-width-desktop) {
+            max-width: 120px !important;
+        }
+    }
+    h1 {
+        color: $white;
+    }
+}

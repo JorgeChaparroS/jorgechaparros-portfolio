@@ -1,0 +1,19 @@
+<chaps-lib-alert [id]="modalId">
+    <section class="d-flex flex-column align-items-center">
+        <h4 class="text-center mb-3 bold">{{ projectInfo?.title }}</h4>
+        <img [src]="projectInfo?.image" [alt]="projectInfo?.title" class="mb-3">
+        @for (text of projectInfo?.description; track $index) {
+            <p class="text">{{ text }}</p>
+        }
+        <div class="row align-items-center w-100">
+            <aside class="col-12 col-md-6 d-flex flex-column align-items-center">
+                <a [href]="projectInfo?.appLink" target="_blank" class="text mb-2 text-center">Redirect to project</a>
+            </aside>
+            <aside class="col-12 col-md-6 d-flex flex-column align-items-center">
+                @for(otherPages of projectInfo?.repository; track $index) {
+                    <a [href]="otherPages?.link" target="_blank" class="text mb-2 text-center">{{otherPages?.label}}</a>
+                }
+            </aside>
+        </div>
+    </section>
+</chaps-lib-alert>
