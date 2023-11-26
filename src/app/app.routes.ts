@@ -1,6 +1,4 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
-import { AuthorComponent } from './pages/author/author.component';
 
 export const routes: Routes = [
     {
