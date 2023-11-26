@@ -12,7 +12,7 @@ I hope you like it.
 4. Run the application with "npm run start" or "ng serve"
 
 # Website: 
-If you do not want to install and launch the project locally, you can always go and check it online here: // deployement is pending yet LOL 
+If you do not want to install and launch the project locally, you can always go and check it online here: https://jorge-chaparros-portfolio.netlify.app 
 
 # Authors:
 @JorgeChaparroS on Instagram and Twitter. (You can always email me at jorgechaparrosarmiento@gmail.com as well)
