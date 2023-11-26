@@ -1,27 +1,27 @@
 <h2 class="mb-3 text-center">Projects:</h2>
 
-<form class="border row py-3 px-xl-3 align-items-center">
+<form class="border row py-3 px-xl-3 mb-4 align-items-center">
     <aside class="col-12 col-xl-12">
         <h4>Filter by:</h4>
         <section class="row mx-0">
             <div class="col-12 col-md-6 col-xl-2 mb-3">
-                <label for="select-technology" class="small-text">Technological approach</label>
-                <chaps-lib-dropdown [id]="'select-technology'" 
+                <label for="select-technology-approach" class="small-text">Technological approach</label>
+                <chaps-lib-dropdown [id]="'select-technology-approach'" 
                         [placeholder]="''" 
-                        [options]="technologyOptions" 
-                        [(ngModel)]="technologySelected"
+                        [options]="technologyApproachOptions" 
+                        [(ngModel)]="technologyApproachSelected"
                         [ngModelOptions]="{standalone: true}"></chaps-lib-dropdown>
             </div>
             <div class="col-12 col-md-6 col-xl-2 mb-3">
                 <label class="small-text">Contribution type</label>
-                <chaps-lib-dropdown [id]="'select-technology'" 
+                <chaps-lib-dropdown [id]="'select-contribution'" 
                         [placeholder]="''" 
                         [options]="contributionOptions" 
                         [(ngModel)]="contributionSelected"
                         [ngModelOptions]="{standalone: true}"></chaps-lib-dropdown>
             </div>
             <div class="col-12 col-xl-8 mb-3">
-                <label class="small-text w-100 mb-3">Technology</label>
+                <label class="small-text w-100 mb-3">Technology (project has to implement all of the selected ones to be shown)</label>
                 @for (tech of availableTechnologies; track $index) {
                     <app-tech-selector 
                         [label]="tech.name"
@@ -51,3 +51,12 @@
         </section>        
     </aside>
 </form>
+
+<div class="row">
+    @for (project of projects; track $index) {
+        <article class="col-3">
+            <p>{{project.title}}</p>
+            <img [src]="project.image" [alt]="project.title + ' image'" width="100%">
+        </article>
+    }
+</div>
