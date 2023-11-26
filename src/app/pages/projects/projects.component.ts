@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChapsAngularLibModule, DropdownOption } from 'chaps-angular-lib';
+import { AlertService, ChapsAngularLibModule, DropdownOption } from 'chaps-angular-lib';
 import { FormsModule } from '@angular/forms';
 import { Constants } from '../../utils/Contants';
 import { TechSelectorComponent } from '../../components/tech-selector/tech-selector.component';
 import { Project } from '../../model';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
+import { ProjectModalComponent } from '../../components/project-modal/project-modal.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, ChapsAngularLibModule, FormsModule, TechSelectorComponent, ProjectCardComponent],
+  imports: [CommonModule, ChapsAngularLibModule, FormsModule, TechSelectorComponent, ProjectCardComponent, ProjectModalComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -34,6 +35,9 @@ export class ProjectsComponent {
   availableTechnologies: any[] = Constants.TECHNOLOGIES;
 
   projects: Project[] = Constants.PROJECTS;
+  projectSelected: Project|any; 
+
+  constructor(private readonly modalService: AlertService) {}
 
   onSearch(): void {
     const technologiesSelected = this.availableTechnologies.filter((technology: any) => technology.selected);
@@ -83,5 +87,10 @@ export class ProjectsComponent {
     this.contributionSelected = null;
     this.availableTechnologies.forEach((technology: any) => technology.selected = false);
     this.onSearch();
+  }
+
+  openModalDetail(project: Project): void {
+    this.projectSelected = project;
+    this.modalService.open(Constants.COMPONENTS.PROJECT_MODAL.ID);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChapsAngularLibModule } from 'chaps-angular-lib';
 
@@ -13,7 +13,11 @@ export class ProjectCardComponent {
   @Input() title = '';
   @Input() imgSrc = '';
 
+  @Output() onSeeDetailClicked = new EventEmitter();
+
+  constructor() {}
+
   showProjectDetail(): void {
-    
+    this.onSeeDetailClicked.emit();
   }
 }

@@ -52,13 +52,26 @@
     </aside>
 </form>
 
-<div class="row">
-    @for (project of projects; track $index) {
-        <article class="col-12 col-md-6 col-xl-3 mb-3">
-            <app-project-card 
-                [title]="project.title"
-                [imgSrc]="project.image">
-            </app-project-card>
-        </article>
-    }
-</div>
+@if (projects.length) {
+    <div class="row">
+        @for (project of projects; track $index) {
+            <article class="col-12 col-md-6 col-xl-3 mb-3">
+                <app-project-card 
+                    [title]="project.title"
+                    [imgSrc]="project.image"
+                    (onSeeDetailClicked)="openModalDetail(project)">
+                </app-project-card>
+            </article>
+        }
+    </div>
+}
+
+@else {
+    <section class="d-flex flex-column justify-content-center align-items-center">
+        <img src="../../../assets/images/no-results.jpg" alt="No results">
+        <p class="text text-center">I have not developed a project that matches those characteristics, but I am constantly working on expanding this portfolio.</p>
+        <p class="text text-center">Maybe in a few months there will be results for your search.</p>
+    </section>
+}
+
+<app-project-modal [projectInfo]="projectSelected"></app-project-modal>

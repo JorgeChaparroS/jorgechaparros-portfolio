@@ -45,6 +45,12 @@ export class Constants {
         Constants.TECHNOLOGY_TYPE.APPLICATION
     ];
 
+    static readonly COMPONENTS = {
+        PROJECT_MODAL: {
+            ID: 'project-detail-modal'
+        }
+    };
+
     static readonly PROJECTS: Project[] = [
         {
             title: 'Naruto Wiki (Angular)',
