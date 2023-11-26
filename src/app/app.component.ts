@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, IMAGE_CONFIG } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ChapsAngularLibModule } from 'chaps-angular-lib';
 import { FooterComponent } from "./components/footer/footer.component";

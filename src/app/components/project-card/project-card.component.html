@@ -1,0 +1,18 @@
+<div class="card bg-light w-100">
+    <article class="main-content text-center">
+        <div class="card-header">
+            <h6 class="m-0">{{title}}</h6>
+        </div>
+        <div class="card-body">
+            <img [src]="imgSrc" [alt]="title">
+        </div>
+    </article>
+    <figcaption>
+        <h4 class="text-center px-2 bold">{{title}}</h4>
+        <chaps-lib-button 
+            [buttonLabel]="'See more'"
+            [buttonClass]="'dark'"
+            (onClicked)="showProjectDetail()">
+        </chaps-lib-button>
+    </figcaption>
+</div>

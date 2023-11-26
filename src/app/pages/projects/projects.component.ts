@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { Constants } from '../../utils/Contants';
 import { TechSelectorComponent } from '../../components/tech-selector/tech-selector.component';
 import { Project } from '../../model';
+import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, ChapsAngularLibModule, FormsModule, TechSelectorComponent],
+  imports: [CommonModule, ChapsAngularLibModule, FormsModule, TechSelectorComponent, ProjectCardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

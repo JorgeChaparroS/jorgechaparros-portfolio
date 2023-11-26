@@ -1,6 +1,6 @@
 <h2 class="mb-3 text-center">Projects:</h2>
 
-<form class="border row py-3 px-xl-3 mb-4 align-items-center">
+<form class="border row py-3 px-xl-3 mb-4 align-items-center bg-light">
     <aside class="col-12 col-xl-12">
         <h4>Filter by:</h4>
         <section class="row mx-0">
@@ -54,9 +54,11 @@
 
 <div class="row">
     @for (project of projects; track $index) {
-        <article class="col-3">
-            <p>{{project.title}}</p>
-            <img [src]="project.image" [alt]="project.title + ' image'" width="100%">
+        <article class="col-12 col-md-6 col-xl-3 mb-3">
+            <app-project-card 
+                [title]="project.title"
+                [imgSrc]="project.image">
+            </app-project-card>
         </article>
     }
 </div>
