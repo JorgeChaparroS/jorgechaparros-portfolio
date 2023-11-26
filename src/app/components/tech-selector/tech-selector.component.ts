@@ -5,8 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-tech-selector',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './tech-selector.component.html',
-  styleUrl: './tech-selector.component.scss'
+  templateUrl: './tech-selector.component.html'
 })
 export class TechSelectorComponent {
 

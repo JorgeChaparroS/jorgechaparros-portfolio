@@ -7,8 +7,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-author',
   standalone: true,
   imports: [CommonModule, ChapsAngularLibModule, RouterLink],
-  templateUrl: './author.component.html',
-  styleUrl: './author.component.scss'
+  templateUrl: './author.component.html'
 })
 export class AuthorComponent {
 

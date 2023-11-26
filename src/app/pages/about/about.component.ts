@@ -7,8 +7,7 @@ import { ChapsAngularLibModule } from 'chaps-angular-lib';
   selector: 'app-about',
   standalone: true,
   imports: [CommonModule, RouterLink, ChapsAngularLibModule],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  templateUrl: './about.component.html'
 })
 export class AboutComponent {
 
