@@ -7,11 +7,12 @@ import { TechSelectorComponent } from '../../components/tech-selector/tech-selec
 import { Project } from '../../model';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { ProjectModalComponent } from '../../components/project-modal/project-modal.component';
+import { ExpandableComponent } from '../../components/expandable/expandable.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, ChapsAngularLibModule, FormsModule, TechSelectorComponent, ProjectCardComponent, ProjectModalComponent],
+  imports: [CommonModule, ChapsAngularLibModule, FormsModule, TechSelectorComponent, ProjectCardComponent, ProjectModalComponent, ExpandableComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

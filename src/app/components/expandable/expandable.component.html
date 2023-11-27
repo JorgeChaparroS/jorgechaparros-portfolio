@@ -1,0 +1,13 @@
+<div class="expandable border bg-light mb-4">
+    <section class="row align-items-center py-2 px-3 pointer" (click)="onExpandCompress()">
+        <h4 class="col-10 m-0">Filters</h4>
+        <span class="col-2">
+            <i class="arrow pointer" [ngClass]="isExpanded ? 'up' : 'down'"></i>
+        </span>
+    </section>
+        @if (isExpanded) {
+            <div class="content-container">
+                <ng-content></ng-content>
+            </div>
+        }
+</div>

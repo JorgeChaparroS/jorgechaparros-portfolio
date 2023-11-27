@@ -1,56 +1,57 @@
 <h2 class="mb-3 text-center">Projects:</h2>
 
-<form class="border row py-3 px-xl-3 mb-4 align-items-center bg-light">
-    <aside class="col-12 col-xl-12">
-        <h4>Filter by:</h4>
-        <section class="row mx-0">
-            <div class="col-12 col-md-6 col-xl-2 mb-3">
-                <label for="select-technology-approach" class="small-text">Technological approach</label>
-                <chaps-lib-dropdown [id]="'select-technology-approach'" 
-                        [placeholder]="''" 
-                        [options]="technologyApproachOptions" 
-                        [(ngModel)]="technologyApproachSelected"
-                        [ngModelOptions]="{standalone: true}"></chaps-lib-dropdown>
-            </div>
-            <div class="col-12 col-md-6 col-xl-2 mb-3">
-                <label class="small-text">Contribution type</label>
-                <chaps-lib-dropdown [id]="'select-contribution'" 
-                        [placeholder]="''" 
-                        [options]="contributionOptions" 
-                        [(ngModel)]="contributionSelected"
-                        [ngModelOptions]="{standalone: true}"></chaps-lib-dropdown>
-            </div>
-            <div class="col-12 col-xl-8 mb-3">
-                <label class="small-text w-100 mb-3">Technology (project has to implement all of the selected ones to be shown)</label>
-                @for (tech of availableTechnologies; track $index) {
-                    <app-tech-selector 
-                        [label]="tech.name"
-                        [selected]="tech.selected"
-                        (click)="onTechSelected($index)">
-                    </app-tech-selector>
-                }
-            </div>
-        </section>
-    </aside>
-    <aside class="col-12 col-xl-12">
-        <section class="row justify-content-center align-items-center">
-            <div class="col-6 col-md-4 col-xl-2">
-                <chaps-lib-button 
-                    [buttonLabel]="'Clear'"
-                    [buttonClass]="'warning'"
-                    (onClicked)="onClearSearch()">
-                </chaps-lib-button>
-            </div>
-            <div class="col-6 col-md-4 col-xl-2">
-                <chaps-lib-button 
-                    [buttonLabel]="'Search'"
-                    [buttonClass]="'info'"
-                    (onClicked)="onSearch()">
-                </chaps-lib-button>
-            </div>
-        </section>        
-    </aside>
-</form>
+<app-expandable>
+    <form class="row py-3 px-xl-3 align-items-center">
+        <aside class="col-12">
+            <section class="row mx-0">
+                <div class="col-12 col-md-6 col-xl-2 mb-3">
+                    <label for="select-technology-approach" class="small-text">Technological approach</label>
+                    <chaps-lib-dropdown [id]="'select-technology-approach'" 
+                            [placeholder]="''" 
+                            [options]="technologyApproachOptions" 
+                            [(ngModel)]="technologyApproachSelected"
+                            [ngModelOptions]="{standalone: true}"></chaps-lib-dropdown>
+                </div>
+                <div class="col-12 col-md-6 col-xl-2 mb-3">
+                    <label class="small-text">Contribution type</label>
+                    <chaps-lib-dropdown [id]="'select-contribution'" 
+                            [placeholder]="''" 
+                            [options]="contributionOptions" 
+                            [(ngModel)]="contributionSelected"
+                            [ngModelOptions]="{standalone: true}"></chaps-lib-dropdown>
+                </div>
+                <div class="col-12 col-xl-8 mb-3">
+                    <label class="small-text w-100 mb-3">Technology (project has to implement all of the selected ones to be shown)</label>
+                    @for (tech of availableTechnologies; track $index) {
+                        <app-tech-selector 
+                            [label]="tech.name"
+                            [selected]="tech.selected"
+                            (click)="onTechSelected($index)">
+                        </app-tech-selector>
+                    }
+                </div>
+            </section>
+        </aside>
+        <aside class="col-12">
+            <section class="row justify-content-center align-items-center">
+                <div class="col-5 col-md-4 col-xl-2">
+                    <chaps-lib-button 
+                        [buttonLabel]="'Clear'"
+                        [buttonClass]="'warning'"
+                        (onClicked)="onClearSearch()">
+                    </chaps-lib-button>
+                </div>
+                <div class="col-5 col-md-4 col-xl-2">
+                    <chaps-lib-button 
+                        [buttonLabel]="'Search'"
+                        [buttonClass]="'info'"
+                        (onClicked)="onSearch()">
+                    </chaps-lib-button>
+                </div>
+            </section>        
+        </aside>
+    </form>
+</app-expandable>
 
 @if (projects.length) {
     <div class="row">
