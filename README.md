@@ -3,7 +3,7 @@ This application is built in Angular 17 (latest version of the framework so far)
 
 Here you are going to find frontend, backend and fullstack projects. (Actually, only frontend projects are available LOL, but I promise to continue expanding my content, just give me some time)
 
-I hope you like it.
+I hope you like it!
 
 # Installation Steps: 
 1. In your workspace, clone the repository with "git clone https://github.com/JorgeChaparroS/jorgechaparros-portfolio"
