@@ -2,6 +2,7 @@
 
 .expandable {
     border-radius: 20px;
+    transition-duration: 0.5s;
     .arrow {
         border: solid $black;
         border-width: 0 3px 3px 0;
@@ -21,5 +22,39 @@
 
     span {
         text-align: end;
+    }
+
+    .content-container {
+        transition-duration: 0.5s;
+    }
+
+    .show-content {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .hide-content {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.height-end {
+    height: 660px;
+    @media (min-width: $min-width-tablet) {
+        height: 373px;
+    }
+    @media (min-width: $min-width-desktop) {
+        height: 306px;
+    }
+}
+
+.height-init {
+    height: 42px;
+    @media (min-width: $min-width-tablet) {
+        height: 52px;
+    }
+    @media (min-width: $min-width-desktop) {
+        height: 58px;
     }
 }
