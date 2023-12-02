@@ -146,6 +146,28 @@ export class Constants {
                 { label: 'Github repository', link:'https://github.com/christophermontero/onepiecedesk' },
                 { label: 'Code refactoring by me', link:'https://github.com/JorgeChaparroS/onepiecedesk' }
             ]
+        },
+        {
+            title: 'JorgeChaparro`S Cinema',
+            image: '../../../assets/images/cinema.png',
+            approach: Constants.TECHNOLOGY_OPTIONS.FRONTEND,
+            technologies: [
+                Constants.TECHNOLOGY_TYPE.ANGULAR.value,
+                Constants.TECHNOLOGY_TYPE.HTML.value,
+                Constants.TECHNOLOGY_TYPE.CSS.value,
+                Constants.TECHNOLOGY_TYPE.SCSS.value,
+                Constants.TECHNOLOGY_TYPE.TYPESCRIPT.value,
+                Constants.TECHNOLOGY_TYPE.APPLICATION.value,
+                Constants.TECHNOLOGY_TYPE.BOOTSTRAP.value,
+            ],
+            description: [
+                'This is an Angular Application that solves a technical requirement that was assigned to me when applying for a position as an Angular Developer.'
+            ],
+            contributionType: Constants.CONTRIBUTION_OPTIONS.OWN,
+            appLink: 'https://jorge-chaparros-cinema.netlify.app',
+            repository: [
+                { label: 'Github repository', link:'https://github.com/JorgeChaparroS/movies-technical-assignment' }
+            ]
         }
     ];
 };
