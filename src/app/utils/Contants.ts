@@ -22,6 +22,7 @@ export class Constants {
         HTML: { value: 'HTML', name: 'HTML'},
         CSS: { value: 'CSS', name: 'CSS'},
         SCSS: { value: 'SCSS', name: 'SCSS'},
+        RESPONSIVE: { value: 'RESPONSIVE', name: 'Responsive Design' },
         TYPESCRIPT: { value: 'TYPESCRIPT', name: 'TypeScript'},
         JAVASCRIPT: { value: 'JAVASCRIPT', name: 'JavaScript'},
         NEXTJS: { value: 'NEXTJS', name: 'NextJS'},
@@ -37,6 +38,7 @@ export class Constants {
         Constants.TECHNOLOGY_TYPE.HTML,
         Constants.TECHNOLOGY_TYPE.CSS,
         Constants.TECHNOLOGY_TYPE.SCSS,
+        Constants.TECHNOLOGY_TYPE.RESPONSIVE,
         Constants.TECHNOLOGY_TYPE.TYPESCRIPT,
         Constants.TECHNOLOGY_TYPE.JAVASCRIPT,
         Constants.TECHNOLOGY_TYPE.NEXTJS,
@@ -62,6 +64,7 @@ export class Constants {
                 Constants.TECHNOLOGY_TYPE.HTML.value,
                 Constants.TECHNOLOGY_TYPE.CSS.value,
                 Constants.TECHNOLOGY_TYPE.SCSS.value,
+                Constants.TECHNOLOGY_TYPE.RESPONSIVE.value,
                 Constants.TECHNOLOGY_TYPE.TYPESCRIPT.value,
                 Constants.TECHNOLOGY_TYPE.UNITTESTING.value,
                 Constants.TECHNOLOGY_TYPE.APPLICATION.value,
@@ -86,6 +89,7 @@ export class Constants {
                 Constants.TECHNOLOGY_TYPE.HTML.value,
                 Constants.TECHNOLOGY_TYPE.CSS.value,
                 Constants.TECHNOLOGY_TYPE.SCSS.value,
+                Constants.TECHNOLOGY_TYPE.RESPONSIVE.value,
                 Constants.TECHNOLOGY_TYPE.JAVASCRIPT.value,
                 Constants.TECHNOLOGY_TYPE.NEXTJS.value,
                 Constants.TECHNOLOGY_TYPE.APPLICATION.value,
@@ -110,6 +114,7 @@ export class Constants {
                 Constants.TECHNOLOGY_TYPE.HTML.value,
                 Constants.TECHNOLOGY_TYPE.CSS.value,
                 Constants.TECHNOLOGY_TYPE.SCSS.value,
+                Constants.TECHNOLOGY_TYPE.RESPONSIVE.value,
                 Constants.TECHNOLOGY_TYPE.TYPESCRIPT.value,
                 Constants.TECHNOLOGY_TYPE.DEPENDENCY.value,
             ],
@@ -133,6 +138,7 @@ export class Constants {
                 Constants.TECHNOLOGY_TYPE.HTML.value,
                 Constants.TECHNOLOGY_TYPE.CSS.value,
                 Constants.TECHNOLOGY_TYPE.SCSS.value,
+                Constants.TECHNOLOGY_TYPE.RESPONSIVE.value,
                 Constants.TECHNOLOGY_TYPE.TYPESCRIPT.value,
                 Constants.TECHNOLOGY_TYPE.APPLICATION.value,
             ],
@@ -156,6 +162,7 @@ export class Constants {
                 Constants.TECHNOLOGY_TYPE.HTML.value,
                 Constants.TECHNOLOGY_TYPE.CSS.value,
                 Constants.TECHNOLOGY_TYPE.SCSS.value,
+                Constants.TECHNOLOGY_TYPE.RESPONSIVE.value,
                 Constants.TECHNOLOGY_TYPE.TYPESCRIPT.value,
                 Constants.TECHNOLOGY_TYPE.APPLICATION.value,
                 Constants.TECHNOLOGY_TYPE.BOOTSTRAP.value,
@@ -167,6 +174,28 @@ export class Constants {
             appLink: 'https://jorge-chaparros-cinema.netlify.app',
             repository: [
                 { label: 'Github repository', link:'https://github.com/JorgeChaparroS/movies-technical-assignment' }
+            ]
+        },
+        {
+            title: 'The Hangman Game',
+            image: '../../../assets/images/hangman.png',
+            approach: Constants.TECHNOLOGY_OPTIONS.FRONTEND,
+            technologies: [
+                Constants.TECHNOLOGY_TYPE.REACT.value,
+                Constants.TECHNOLOGY_TYPE.HTML.value,
+                Constants.TECHNOLOGY_TYPE.CSS.value,
+                Constants.TECHNOLOGY_TYPE.JAVASCRIPT.value,
+                Constants.TECHNOLOGY_TYPE.APPLICATION.value
+            ],
+            description: [
+                'This is a small React Application built from scratch which main purposes are to practice some of my React.js knowlegde and keep my programming logic fresh.',
+                'As design is not one of its strong points, application is not responsive, so make sure you are going to use a desktop device to play the game.',
+                '¡Have fun!'
+            ],
+            contributionType: Constants.CONTRIBUTION_OPTIONS.OWN,
+            appLink: 'https://el-juego-del-ahorcado.netlify.app',
+            repository: [
+                { label: 'Github repository', link:'https://github.com/JorgeChaparroS/hangman-game' }
             ]
         }
     ];
